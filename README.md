@@ -70,35 +70,7 @@ A modern student portal web application built with React, Tailwind CSS, and Reac
     http://localhost:3000
 
 ## Project Structure
-student-portal-js/
-
-├── src/
-
-│   ├── components/       # Reusable UI components
-
-│   ├── context/          # React context providers
-
-│   ├── pages/            # Page components
-
-│   │   ├── auth/         # Authentication pages
-
-│   │   ├── dashboard/    # Dashboard pages
-
-│   │   └── ...           # Other pages
-
-│   ├── App.css           # Global styles
-
-│   ├── AppRoutes.jsx     # Application routes
-
-│   ├── main.jsx          # Application entry point
-
-│   └── index.css         # Tailwind CSS imports
-
-├── public/               # Static assets
-
-├── package.json          # Project dependencies
-
-└── vite.config.js        # Vite configuration
+![Uploading Screenshot 2025-06-26 at 11.57.26 PM.png…]()
 
 
 ## Configuration
