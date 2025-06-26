@@ -1,0 +1,342 @@
+/* General Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif; /* or any other clean font */
+  background-color: #f5f5f5; /* Default background for light mode */
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Scrollbar for overflow content */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #6c63ff #f0f0f0;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #6c63ff;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+/* Tailwind Customizations */
+.bg-primary {
+  background-color: #6c63ff; /* Purple primary color */
+}
+
+.bg-secondary {
+  background-color: #f5f5f5; /* Light background for sections */
+}
+
+.text-primary {
+  color: #6c63ff;
+}
+
+.text-secondary {
+  color: #333;
+}
+
+.text-muted {
+  color: #888;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-link {
+  padding: 10px 20px;
+  color: #333;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+nav .nav-link:hover {
+  color: #6c63ff;
+  background-color: rgba(108, 99, 255, 0.1);
+}
+
+nav .nav-link.active {
+  color: #fff;
+  background-color: #6c63ff;
+  border-radius: 5px;
+}
+
+nav .dark .nav-link {
+  color: #f1f1f1;
+}
+
+nav .dark .nav-link:hover {
+  background-color: rgba(108, 99, 255, 0.3);
+}
+
+/* Card Styles */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card .icon {
+  font-size: 30px;
+  color: #6c63ff;
+}
+
+.card .card-title {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.card .card-description {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Button Styles */
+button,
+input[type="submit"],
+input[type="button"] {
+  background-color: #6c63ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #4c46d4;
+}
+
+/* Feature Section Styles */
+.feature-section {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.feature-section .feature-title {
+  font-size: 2.5rem;
+  color: #6c63ff;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.feature-section .feature-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.feature-section .feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-section .feature-card .feature-icon {
+  font-size: 30px;
+  color: #6c63ff;
+}
+
+.feature-section .feature-card .feature-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.feature-section .feature-card .feature-description {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #fff;
+  font-weight: 600;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #6c63ff;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+}
+
+footer .social-icons i {
+  font-size: 24px;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content p {
+  font-size: 1rem;
+}
+
+.modal-content .close-btn {
+  background-color: #6c63ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.modal-content .close-btn:hover {
+  background-color: #4c46d4;
+}
+/* Remove unnecessary calendar styling */
+.react-calendar {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;  /* Ensure no background */
+  max-width: 100%;
+  min-width: 350px;  /* Adjust calendar width */
+}
+
+/* Set a consistent color for the dates in light mode */
+.react-calendar__tile {
+  color: #333 !important;  /* Text color for dates in light mode */
+}
+
+/* Dark Mode styling for calendar */
+.react-calendar.dark__react-calendar {
+  background-color: #333 !important;  /* Dark background for dark mode */
+  color: white !important;  /* White text in dark mode */
+}
+
+/* Hide dates from other months */
+.react-calendar__tile--outside {
+  display: none !important;  /* Hide days from outside the current month */
+}
+
+/* Hover state styling */
+.react-calendar__tile:enabled:hover {
+  background-color: #6d28d9;  /* Single hover color for dates */
+  color: white;  /* Text color on hover */
+}
+
+/* Active state for selected date */
+.react-calendar__tile.react-calendar__tile--active {
+  background-color: #6d28d9;  /* Single color for active date */
+  color: white;
+}
+
+/* Make the calendar bigger */
+.react-calendar {
+  font-size: 1.5rem !important;
+}
+
+/* Ensure calendar buttons don't inherit global button styles */
+.react-calendar button {
+  background-color: transparent !important;  /* Reset button background */
+  color: inherit !important;  /* Inherit text color */
+  border: none !important;  /* Remove borders from calendar buttons */
+  box-shadow: none !important;  /* Remove any shadows from calendar buttons */
+  padding: 0 !important;  /* Remove padding to avoid button styles affecting calendar */
+  cursor: pointer;  /* Keep pointer cursor on calendar button */
+}
+
+/* Button Styles (Preserve button styles for actual buttons) */
+button,
+input[type="submit"],
+input[type="button"] {
+  background-color: #6c63ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #4c46d4;
+}
+
+/* Hide days from other months */
+.react-calendar__tile.hidden-day {
+  visibility: hidden !important;  /* Make the non-current month days invisible */
+}
