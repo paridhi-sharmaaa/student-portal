@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom';
+import johnDoeImg from '../assets/john doe.jpg';
+import janeSmithImg from '../assets/1747748621788.jpeg';
+import emilyJohnsonImg from '../assets/pexels-olly-733872.jpg';
 
 export default function About() {
+
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 py-12">
@@ -40,19 +44,19 @@ export default function About() {
                 icon: '📊', 
                 title: 'Academic Tracking', 
                 desc: 'Monitor your grades and progress',
-                link: '/dashboard' // Functional link to the dashboard page
+                link: '/dashboard'
               },
               { 
                 icon: '👥', 
                 title: 'Student Network', 
                 desc: 'Connect with classmates and faculty', 
-                link: '/users' // Functional link to the user network page
+                link: '/users'
               },
               { 
                 icon: '📅', 
                 title: 'Event Management', 
                 desc: 'Stay updated with campus events',
-                link: '/events' // Functional link to the events page
+                link: '/events'
               }
             ].map((feature, index) => (
               <Link 
@@ -76,12 +80,12 @@ export default function About() {
           </p>
           <div className="flex justify-center space-x-6">
             {[
-              { name: 'John Doe', role: 'Developer', img: 'https://via.placeholder.com/100' },
-              { name: 'Jane Smith', role: 'Designer', img: 'https://via.placeholder.com/100' },
-              { name: 'Emily Johnson', role: 'Product Manager', img: 'https://via.placeholder.com/100' }
+              { name: 'John Doe', role: 'Developer', img: johnDoeImg },
+              { name: 'Jane Smith', role: 'Designer', img: janeSmithImg },
+              { name: 'Emily Johnson', role: 'Product Manager', img: emilyJohnsonImg }
             ].map((member, index) => (
               <div key={index} className="flex flex-col items-center bg-purple-100 dark:bg-purple-800 p-4 rounded-xl shadow-md hover:shadow-lg transition-all">
-                <img src={member.img} alt={member.name} className="rounded-full mb-4 w-24 h-24 border-4 border-purple-600 dark:border-purple-400" />
+                <img src={member.img} alt={member.name} className="rounded-full mb-4 w-24 h-24 object-cover border-4 border-purple-600 dark:border-purple-400" />
                 <h3 className="text-lg font-semibold text-gray-800 dark:text-white">{member.name}</h3>
                 <p className="text-gray-600 dark:text-gray-400">{member.role}</p>
               </div>
