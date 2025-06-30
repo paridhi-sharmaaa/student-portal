@@ -12,7 +12,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-md">
+    <nav className="bg-gradient-to-r from-purple-600 to-blue-600 dark:to-black text-white shadow-md">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo */}
         <Link to="/" className="flex items-center">
